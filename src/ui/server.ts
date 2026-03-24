@@ -16,7 +16,7 @@ import {
   POLLING_INTERVALS_MS,
   READONLY_MODE,
 } from "../config";
-import { authMiddleware } from "../auth/server-patch";
+import { authMiddleware } from "../auth/gateway-middleware";
 import type { ToolClient } from "../clients/tool-client";
 import { mapSessionsListToSummaries } from "../mappers/openclaw-mappers";
 import { buildApiDocs } from "../runtime/api-docs";
